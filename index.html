@@ -60,8 +60,17 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>TESTYTESTPAGE</b></h1>
-  <p>Welcome to test page for ToH <span class="w3-tag"></span></p>
+  <h1><b>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </b></h1>
+  <p> <span class="w3-tag"></span></p>
 </header>
 
 <!-- Grid -->
@@ -111,7 +120,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-  
+
 
 <!-- END BLOG ENTRIES -->
 </div>
@@ -120,13 +129,49 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="004.jpg" style="width:100%">
-    <div class="w3-container w3-custom">
-      <h4><b>testside</b></h4>
-      <p>hello i am test about card</p>
-    </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container w3-custom">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="004.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="008.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="009.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="010.jpg" style="width:100%">
+    <div class="text">Caption four</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
   </div><hr>
-  
+
   <!-- Posts -->
   <div class="w3-card w3-margin w3-custom2">
     <div class="w3-container w3-padding">
@@ -142,23 +187,23 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <img src="004.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">Test2</span><br>
         <span>Test2</span>
-      </li> 
+      </li>
       <li class="w3-padding-16">
         <img src="004.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">Test3</span><br>
         <span>Test3</span>
-      </li>   
+      </li>
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
         <img src="004.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">Test4</span><br>
         <span>Test4</span>
-      </li>  
+      </li>
     </ul>
   </div>
-  <hr> 
- 
- 
-  
+  <hr>
+
+
+
 <!-- END Introduction Menu -->
 </div>
 
@@ -173,5 +218,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
 </footer>
 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
 </body>
 </html>
