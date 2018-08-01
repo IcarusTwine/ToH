@@ -36,12 +36,15 @@
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 </style>
+
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-card">
-    <img src="001.jpg" alt="Lights" style="width:100%;max-width:1904px">
+    <div class="w3-bar" id="myNavbar">
+  <div class="w3-row w3-bar w3-white w3-wide w3-card w3-mobile w3-rest">
+    <img src="001.jpg" alt="Lights" style="width:100%;max-width:100%">
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-display-middle w3-hide-small">
+    <div class="w3-row w3-display-middle w3-mobile w3-content w3-hide-small ">
       <a href="index.html" class="w3-bar-item w3-button w3-text-white">Link 1</a>
       <a href="index.html" class="w3-bar-item w3-button w3-text-white">Link 2</a>
       <a href="index.html" class="w3-bar-item w3-button w3-text-white">Thieves of Hearts</a>
@@ -50,9 +53,35 @@
     </div>
   </div>
 </div>
+</div>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+     <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+     <div class="w3-dropdown-hover">
+    <button class="w3-button"><i class="fa fa-bars"></i> PATCH 4.2</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="index.html" class="w3-bar-item w3-button">PATCH 4.21</a>
+      <a href="4_25.html" class="w3-bar-item w3-button">PATCH 4.25</a>
+      <a href="4_25hf01.html" class="w3-bar-item w3-button">4.25 HOTFIX #1</a>
+      <a href="4_25hf01.html" class="w3-bar-item w3-button">4.25 HOTFIX #2</a>
+    </div>
+  </div>
+    <div class="w3-dropdown-hover">
+    <button class="w3-button"><i class="fa fa-bars"></i> PATCH 4.2</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="4_3.html" class="w3-bar-item w3-button">PATCH 4.23</a>
+    </div>
+  </div>
+  
+  <div class="w3-dropdown-hover">
+    
+  </div>
+  
+  </div>
+  </div>
+</div>
 
 <div class="w3-content" style="max-width:1400px">
 
@@ -128,48 +157,48 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
+  <div class="w3-card w3-margin w3-margin-top w3-custom2">
     <!-- Slideshow container -->
-<div class="slideshow-container w3-custom">
+<div class="slideshow-container w3-custom2">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 4</div>
     <img src="004.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text w3-display-topmiddle">Caption Two</div>
   </div>
-
   <div class="mySlides fade">
     <div class="numbertext">2 / 4</div>
     <img src="008.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text w3-display-topmiddle">Caption Two</div>
   </div>
-
   <div class="mySlides fade">
     <div class="numbertext">3 / 4</div>
     <img src="009.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text w3-display-topmiddle">Caption Two</div>
   </div>
-
-   <div class="mySlides fade">
+  <div class="mySlides fade">
     <div class="numbertext">4 / 4</div>
     <img src="010.jpg" style="width:100%">
-    <div class="text">Caption four</div>
+    <div class="text w3-display-topmiddle">Caption Two</div>
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+  </div>
+
 </div>
 <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
+<span class="w3-large w3-section w3-middle ">Latest News</span>
+
   </div><hr>
 
   <!-- Posts -->
@@ -219,19 +248,80 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </footer>
 
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function showSlides() {
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+<script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
 </body>
